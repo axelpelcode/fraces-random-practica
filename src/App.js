@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Boton from './componentes/Boton';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component() {
+  clickSiguienteFrace(){
+    console.log("click Siguiente Frace funciona-ok");
+  }
+  clickTwittear(){
+    console.log("click Twittear funciona-ok");
+  }
+  
+  render (){
+    return (  
+      <div className="App" id="quote-box">
+        <Boton nombreBoton="Nueva Frace" clickEfecto={this.clickSiguienteFrace} />
+        <Boton nombreBoton="Twittear" clickEfecto={this.clickTwittear} />
+      </div>
+    );
+  }
 }
 
 export default App;
