@@ -12,15 +12,21 @@ function clickTwittear(){
 
 function App() {
   return (
-    <div className="App" id="quote-box">
-      <Boton 
-        nombreBoton="Nueva frace" 
-        clickEfecto={clickSiguienteFrace} 
-      />
-      <Boton 
-        nombreBoton="Twittear" 
-        clickEfecto={clickTwittear} 
-      />
+
+    <div className="App">
+      <div>
+        <h1>Fraces random</h1>
+      </div>
+      <div id="quote-box">
+        <Boton 
+          nombreBoton="Nueva frace" 
+          clickEfecto={clickSiguienteFrace} 
+        />
+        <Boton 
+          nombreBoton="Twittear" 
+          clickEfecto={clickTwittear} 
+        />
+      </div>
     </div>
   )
 }
