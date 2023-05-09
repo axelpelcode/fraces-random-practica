@@ -1,16 +1,26 @@
 import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import Boton from './componentes/Boton';
-
-function clickSiguienteFrace(){
-  console.log("click Nueva frace-ok");
-}
-
-function clickTwittear(){
-  console.log("click Twittear funciona-ok");
-}
+import FraceDisplay from './componentes/FraceDisplay';
+import Fraces from './Objeto/Fraces';
 
 function App() {
+
+  const [num, setNum] = useState(0);
+
+  const Randomer = (max) => Math.floor(Math.random() * max);
+
+  const clickSiguienteFrace = () => {
+   setNum(
+    (num * 0) + Randomer(26)
+    )
+    console.log(num);
+  }
+
+  const clickTwittear = () => {
+   console.log("click Twittear funciona-ok");
+  }
   return (
 
     <div className="App">
@@ -18,6 +28,9 @@ function App() {
         <h1>Fraces random</h1>
       </div>
       <div id="quote-box">
+        < FraceDisplay 
+          fraceSelect={Fraces[num]}
+        /> 
         <Boton 
           nombreBoton="Nueva frace" 
           clickEfecto={clickSiguienteFrace} 
