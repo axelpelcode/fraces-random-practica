@@ -32,11 +32,19 @@ function App() {
           fraceSelect={Fraces[num]}
         /> 
         <Boton 
+          idBoton="new-quote"
           nombreBoton="Nueva frace" 
           clickEfecto={clickSiguienteFrace} 
         />
         <Boton 
-          nombreBoton="Twittear" 
+          idBoton="tweet"
+          nombreBoton= {<a 
+            id="tweet-quote"
+            href={`http://twitter.com/intent/tweet?text="${Fraces[num][0]}" - ${Fraces[num][1]}`} 
+            target="_blank"
+            >
+            Twittear
+            </a>} 
           clickEfecto={clickTwittear} 
         />
       </div>
