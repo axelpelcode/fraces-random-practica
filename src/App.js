@@ -27,38 +27,35 @@ function App() {
     <div className="App" >
       <div className="container-fluid">
         <div className="row">
-            <div className="row">
-              <div className="col-md-4" />
-              <h1 className="text-primary text-center col-md-3">Fraces random</h1>
-            <img 
-              className="img-responsive col-md-1"
-              src={logo} 
-              title="Fraces random para twittear"
-              alt="Preciona 'Nueva frace' para generar una frace aleatoria
-               o 'Twittear' para publicalra."
-            />
-            <div className="col-md-4" />
-            </div>
-        </div>  
-          <div id="quote-box" className="row" >
-            <div className="col-xl-2" />
-            <div className="col-xl-8">
+            
+          <div className="col-md-4" />
+          <h1 className="text-primary text-center col-md-3">Fraces random</h1>
+          <img 
+            className="img-responsive col-md-1"
+            src={logo} 
+            title="Fraces random para twittear"
+            alt="Preciona 'Nueva frace' para generar una frace aleatoria
+             o 'Twittear' para publicalra."
+          />
+          <div className="col-md-4" />
+
+          <div className="col-md-2" />  
+          <div id="quote-box" className="col-md-8 well" >
             < FraceDisplay 
               fraceSelect={Fraces[num]}
             /> 
-            </div>
-            <div className="col-xl-2" />
-            <div>
+          
+            <div className="col-md-2">
             <Boton 
-              clase="btn btn-primary"
+              claseStr={"btn btn-primary btn-block"}
               idBoton="new-quote"
               nombreBoton="Nueva frace" 
               clickEfecto={clickSiguienteFrace} 
             />
             </div>
-            <div>
+            <div className="col-md-2">
             <Boton 
-              clase="btn btn-default"
+              claseStr={"btn btn-default btn-block"}
               idBoton="tweet"
               nombreBoton= {<a 
                 id="tweet-quote"
@@ -71,11 +68,14 @@ function App() {
             />
             </div>
           </div>
+          <div className="col-md-2" />
+        </div>
+        
           
-        <div>
+        <div className="text-center col-md-12">
           <footer id="footer">
             <a id="contacto" href="https://github.com/axelpelcode">
-              app creada por AxelPelCode
+              by AxelPelCode
             </a>
           </footer>
         </div>

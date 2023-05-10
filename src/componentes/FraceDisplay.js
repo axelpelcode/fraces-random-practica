@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FraceDisplay({fraceSelect, clase}){
+function FraceDisplay({fraceSelect}){
     return (
         <div>
             <p id="text" className="text-center" >"{fraceSelect[0]}"</p>

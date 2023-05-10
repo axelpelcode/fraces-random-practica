@@ -1,5 +1,9 @@
+
 body{
   background-color:rgb(208, 196, 250);
+}
+.App{
+  text-align: center;
 }
 img{
   max-width:50px;
@@ -8,13 +12,12 @@ img{
 p{
   font-size: 2rem;
 }
-h1{
+h1, p{
   font-family: Lobster, Monospace;
 }
 #author{
   text-align:right;
 }
-#footer{
+footer{
   color:grey;
-  text-align: center;
 }

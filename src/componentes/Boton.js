@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Boton = ({nombreBoton, clickEfecto, idBoton}) => (
-    <button id={idBoton} onClick={clickEfecto}>{nombreBoton}</button>
+const Boton = ({nombreBoton, clickEfecto, idBoton, claseBoton}) => (
+    <button id={idBoton} className={claseBoton} onClick={clickEfecto}>{nombreBoton}</button>
 );
 
 export default Boton;
