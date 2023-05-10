@@ -1,10 +1,10 @@
 import React from 'react';
 
-function FraceDisplay({fraceSelect}){
+function FraceDisplay({fraceSelect, clase}){
     return (
         <div>
-            <p id="text">"{fraceSelect[0]}"</p>
-            <p id="author">- {fraceSelect[1]}</p>
+            <p id="text" className="text-center" >"{fraceSelect[0]}"</p>
+            <p id="author" className="text-rigth" >- {fraceSelect[1]}</p>
         </div>
     );
 }
