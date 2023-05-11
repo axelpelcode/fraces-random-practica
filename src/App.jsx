@@ -47,7 +47,7 @@ function App() {
           
             <div className="col-md-2">
             <Boton 
-              claseStr={"btn btn-primary btn-block"}
+              claseBoton="btn btn-primary btn-block"
               idBoton="new-quote"
               nombreBoton="Nueva frace" 
               clickEfecto={clickSiguienteFrace} 
@@ -55,7 +55,7 @@ function App() {
             </div>
             <div className="col-md-2">
             <Boton 
-              claseStr={"btn btn-default btn-block"}
+              claseBoton="btn btn-default btn-block"
               idBoton="tweet"
               nombreBoton= {<a 
                 id="tweet-quote"
