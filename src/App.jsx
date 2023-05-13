@@ -54,6 +54,14 @@ function App() {
             />
             </div>
             <div className="col-md-2">
+              <a 
+                className="btn btn-default btn-block"
+                id="tweet-quote"
+                href={`http://twitter.com/intent/tweet?text="${Fraces[num][0]}" - ${Fraces[num][1]}`} 
+                target="_blank"
+                >
+                Twittear <i class="fab fa-twitter" />
+              </a>
             <Boton 
               claseBoton="btn btn-default btn-block"
               idBoton="tweet"
