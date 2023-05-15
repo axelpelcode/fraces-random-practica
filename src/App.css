@@ -18,6 +18,10 @@ h1, p{
 #author{
   text-align:right;
 }
-footer{
-  color:grey;
+#tweet-quote{
+  color:white;
+  text-decoration: none;
+}
+#contacto{
+  color:rgb(174, 173, 173);
 }
