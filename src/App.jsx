@@ -40,48 +40,44 @@ function App() {
           <div className="col-md-4" />
 
           <div className="col-md-2" />  
-          <div id="quote-box" className="col-md-8 well" >
+          <div id="quote-box" className="col-md-8" >
             < FraceDisplay 
               fraceSelect={Fraces[num]}
             /> 
-          
+          <div className="row">
+            <div className="col-md-4" />
             <div className="col-md-2">
             <Boton 
-              claseBoton="btn btn-primary btn-block"
+              claseBoton="btn btn-block btn-primary"
               idBoton="new-quote"
               nombreBoton="Nueva frace" 
               clickEfecto={clickSiguienteFrace} 
             />
             </div>
             <div className="col-md-2">
-              <a 
-                className="btn btn-default btn-block"
-                id="tweet-quote"
-                href={`http://twitter.com/intent/tweet?text="${Fraces[num][0]}" - ${Fraces[num][1]}`} 
-                target="_blank"
-                >
-                Twittear <i class="fab fa-twitter" />
-              </a>
             <Boton 
-              claseBoton="btn btn-default btn-block"
+              claseBoton="btn btn-block btn-info"
               idBoton="tweet"
               nombreBoton= {<a 
                 id="tweet-quote"
                 href={`http://twitter.com/intent/tweet?text="${Fraces[num][0]}" - ${Fraces[num][1]}`} 
                 target="_blank"
                 >
-                Twittear <i class="fab fa-twitter" />
+                Twittear <i className="fab fa-twitter" />
                 </a>} 
               clickEfecto={clickTwittear} 
             />
             </div>
+            <div className="col-md-4"/>
+            </div>
           </div>
           <div className="col-md-2" />
+
         </div>
         
           
         <div className="text-center col-md-12">
-          <footer id="footer">
+          <footer >
             <a id="contacto" href="https://github.com/axelpelcode">
               by AxelPelCode
             </a>
