@@ -28,8 +28,7 @@ function App() {
       <div className="container-fluid">
         <div className="row">
             
-          <div className="col-md-4" />
-          <h1 className="text-primary text-center col-md-3">Fraces random</h1>
+          <div className="col-md-3" />
           <img 
             className="img-responsive col-md-1"
             src={logo} 
@@ -37,10 +36,18 @@ function App() {
             alt="Preciona 'Nueva frace' para generar una frace aleatoria
              o 'Twittear' para publicalra."
           />
-          <div className="col-md-4" />
+          <h1 className="text-primary text-center col-md-4">Fraces random</h1>
+          <img 
+            className="img-responsive col-md-1"
+            src={logo} 
+            title="Fraces random para twittear"
+            alt="Preciona 'Nueva frace' para generar una frace aleatoria
+             o 'Twittear' para publicalra."
+          />
+          <div className="col-md-3" />
 
           <div className="col-md-2" />  
-          <div id="quote-box" className="col-md-8" >
+          <div id="quote-box" className="col-md-8 well" >
             < FraceDisplay 
               fraceSelect={Fraces[num]}
             /> 
