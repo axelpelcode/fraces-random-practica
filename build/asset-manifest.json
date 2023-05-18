@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a0487abb.css",
-    "main.js": "/static/js/main.5e120388.js",
-    "static/media/frp-logo.png": "/static/media/frp-logo.dc2cb53a593bea21005a.png",
-    "index.html": "/index.html",
-    "main.a0487abb.css.map": "/static/css/main.a0487abb.css.map",
-    "main.5e120388.js.map": "/static/js/main.5e120388.js.map"
+    "main.css": "/fraces-random-practica/static/css/main.a0487abb.css",
+    "main.js": "/fraces-random-practica/static/js/main.6b782c63.js",
+    "static/media/frp-logo.png": "/fraces-random-practica/static/media/frp-logo.dc2cb53a593bea21005a.png",
+    "index.html": "/fraces-random-practica/index.html",
+    "main.a0487abb.css.map": "/fraces-random-practica/static/css/main.a0487abb.css.map",
+    "main.6b782c63.js.map": "/fraces-random-practica/static/js/main.6b782c63.js.map"
   },
   "entrypoints": [
     "static/css/main.a0487abb.css",
-    "static/js/main.5e120388.js"
+    "static/js/main.6b782c63.js"
   ]
 }
