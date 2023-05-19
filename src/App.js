@@ -47,7 +47,7 @@ function App() {
           <div className="col-md-3" />
 
           <div className="col-md-2" />  
-          <div id="quote-box" className="col-md-8 well" >
+          <div id="quote-box" className="col-md-8" >
             < FraceDisplay 
               fraceSelect={Fraces[num]}
             /> 
